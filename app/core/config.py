@@ -1,7 +1,7 @@
 from pydantic_settings import BaseSettings
 
 class Settings(BaseSettings):
-    PROJECT_NAME: str = "Intelligent Content API"
+    PROJECT_NAME: str = "EmoEnergy Backend"
     API_V1_STR: str = "/api/v1"
     SECRET_KEY: str = "changethis"  # In prod, use a strong secret from env
     ALGORITHM: str = "HS256"
