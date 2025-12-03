@@ -9,8 +9,12 @@ class Settings(BaseSettings):
     
     # Database
     DATABASE_URL: str = "sqlite:///./sql_app.db" # Default to SQLite for local dev
+    
+    # AI
+    OPENAI_API_KEY: str = ""
 
     class Config:
         env_file = ".env"
+        extra = "ignore"
 
 settings = Settings()
